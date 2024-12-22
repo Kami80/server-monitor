@@ -1,0 +1,361 @@
+2024-12-22 21:08:59,675 - INFO - Successfully fetched server metrics.
+2024-12-22 21:08:59,895 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PROJECTS\fekrooneh\server_monitor\monitor\views.py", line 51, in home
+    return render(request, 'home.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 7: 'static'. Did you forget to register or load this tag?
+2024-12-22 21:09:00,517 - WARNING - Not Found: /favicon.ico
+2024-12-22 21:10:06,660 - INFO - Successfully fetched server metrics.
+2024-12-22 21:10:06,723 - ERROR - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\files\storage\handler.py", line 35, in __getitem__
+    return self._storages[alias]
+           ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\PROJECTS\fekrooneh\server_monitor\monitor\views.py", line 51, in home
+    return render(request, 'home.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\templatetags\static.py", line 116, in render
+    url = self.url(context)
+          ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\templatetags\static.py", line 113, in url
+    return self.handle_simple(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\templatetags\static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\functional.py", line 266, in inner
+    self._setup()
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\staticfiles\storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\files\storage\handler.py", line 43, in __getitem__
+    storage = self.create_storage(params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\files\storage\handler.py", line 55, in create_storage
+    return storage_cls(**options)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\staticfiles\storage.py", line 460, in __init__
+    self.hashed_files, self.manifest_hash = self.load_manifest()
+                                            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\staticfiles\storage.py", line 470, in load_manifest
+    content = self.read_manifest()
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\staticfiles\storage.py", line 464, in read_manifest
+    with self.manifest_storage.open(self.manifest_name) as manifest:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\files\storage\base.py", line 22, in open
+    return self._open(name, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\files\storage\filesystem.py", line 68, in _open
+    return File(open(self.path(name), mode))
+                     ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\staticfiles\storage.py", line 39, in path
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
+2024-12-22 21:11:28,783 - INFO - E:\PROJECTS\fekrooneh\server_monitor\server_monitor\settings.py changed, reloading.
+2024-12-22 21:11:32,616 - INFO - Successfully fetched server metrics.
+2024-12-22 21:11:32,752 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:11:32,798 - WARNING - Not Found: /favicon.ico
+2024-12-22 21:11:37,751 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:11:42,754 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:11:47,751 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:11:52,751 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:11:57,749 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:02,764 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:07,742 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:12,753 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:17,747 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:22,748 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:28,201 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:33,210 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:38,210 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:43,213 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:48,226 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:53,211 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:12:58,213 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:03,211 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:08,258 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:12,752 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:16,085 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:44,588 - INFO - E:\PROJECTS\fekrooneh\server_monitor\monitor\views.py changed, reloading.
+2024-12-22 21:13:49,243 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:51,795 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:13:51,960 - WARNING - Not Found: /favicon.ico
+2024-12-22 21:13:52,719 - WARNING - Not Found: /accounts/login/
+2024-12-22 21:14:00,600 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:19,501 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:20,624 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:25,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:30,642 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:35,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:40,629 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:45,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:50,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:14:55,624 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:00,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:05,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:10,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:16,205 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:21,223 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:26,213 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:31,205 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:36,213 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:41,221 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:46,213 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:51,195 - INFO - Successfully fetched server metrics.
+2024-12-22 21:15:55,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:00,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:05,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:10,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:15,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:20,633 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:25,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:30,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:35,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:40,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:45,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:50,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:16:55,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:00,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:05,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:10,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:15,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:20,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:25,629 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:30,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:35,633 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:40,625 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:45,662 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:50,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:17:55,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:00,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:05,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:10,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:15,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:20,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:25,625 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:30,628 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:35,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:40,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:45,629 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:50,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:18:55,640 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:00,625 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:05,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:10,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:15,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:20,644 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:25,629 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:30,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:35,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:40,628 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:45,633 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:50,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:19:55,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:00,642 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:05,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:10,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:15,643 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:20,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:25,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:30,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:35,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:40,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:45,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:50,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:20:55,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:00,625 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:05,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:10,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:15,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:20,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:25,645 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:30,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:35,633 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:40,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:45,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:50,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:21:55,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:00,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:05,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:10,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:15,635 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:20,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:25,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:30,640 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:35,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:40,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:45,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:50,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:22:55,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:00,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:05,631 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:10,649 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:15,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:20,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:25,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:30,642 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:35,644 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:40,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:45,638 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:50,635 - INFO - Successfully fetched server metrics.
+2024-12-22 21:23:55,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:00,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:05,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:10,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:15,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:20,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:25,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:30,635 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:35,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:40,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:45,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:50,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:24:55,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:00,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:05,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:10,640 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:15,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:20,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:25,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:30,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:35,634 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:40,637 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:45,627 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:50,640 - INFO - Successfully fetched server metrics.
+2024-12-22 21:25:56,208 - INFO - Successfully fetched server metrics.
+2024-12-22 21:26:01,208 - INFO - Successfully fetched server metrics.
+2024-12-22 21:26:06,219 - INFO - Successfully fetched server metrics.
+2024-12-22 21:40:41,369 - INFO - Successfully fetched server metrics.
+2024-12-22 21:40:45,626 - INFO - Successfully fetched server metrics.
+2024-12-22 21:40:50,632 - INFO - Successfully fetched server metrics.
+2024-12-22 21:40:55,630 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:00,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:05,640 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:10,636 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:15,641 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:20,639 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:26,209 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:31,210 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:36,209 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:41,232 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:46,213 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:51,210 - INFO - Successfully fetched server metrics.
+2024-12-22 21:41:56,215 - INFO - Successfully fetched server metrics.
+2024-12-22 21:42:01,210 - INFO - Successfully fetched server metrics.
+2024-12-22 21:42:06,208 - INFO - Successfully fetched server metrics.
+2024-12-22 21:42:11,210 - INFO - Successfully fetched server metrics.
+2024-12-22 21:42:16,217 - INFO - Successfully fetched server metrics.
+2024-12-22 21:43:00,222 - INFO - Successfully fetched server metrics.
+2024-12-22 21:44:00,214 - INFO - Successfully fetched server metrics.
+2024-12-22 21:45:00,209 - INFO - Successfully fetched server metrics.
+2024-12-22 21:46:00,219 - INFO - Successfully fetched server metrics.
+2024-12-22 21:47:00,216 - INFO - Successfully fetched server metrics.
+2024-12-22 21:48:00,212 - INFO - Successfully fetched server metrics.
+2024-12-22 21:49:00,217 - INFO - Successfully fetched server metrics.
+2024-12-22 21:50:00,208 - INFO - Successfully fetched server metrics.
+2024-12-22 21:51:00,218 - INFO - Successfully fetched server metrics.
+2024-12-22 21:52:00,219 - INFO - Successfully fetched server metrics.
+2024-12-22 21:53:00,225 - INFO - Successfully fetched server metrics.
+2024-12-22 21:54:00,218 - INFO - Successfully fetched server metrics.
+2024-12-22 21:55:00,213 - INFO - Successfully fetched server metrics.
+2024-12-22 21:56:00,214 - INFO - Successfully fetched server metrics.
+2024-12-22 21:57:00,230 - INFO - Successfully fetched server metrics.
+2024-12-22 21:58:00,216 - INFO - Successfully fetched server metrics.
+2024-12-22 22:26:54,760 - INFO - Successfully fetched server metrics.
+2024-12-22 22:27:00,210 - INFO - Successfully fetched server metrics.
+2024-12-22 22:57:59,053 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:00,630 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:01,974 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:02,325 - WARNING - Not Found: /favicon.ico
+2024-12-22 22:58:03,147 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:08,150 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:13,155 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:18,153 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:23,160 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:28,159 - INFO - Successfully fetched server metrics.
+2024-12-22 22:58:33,144 - INFO - Successfully fetched server metrics.
