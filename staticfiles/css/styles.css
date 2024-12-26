@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.metric {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+}
+
+.metric h3 {
+    margin: 0 0 0.5em;
+}
+
+.metric p {
+    margin: 0.2em 0;
+    font-size: 1em;
+}
+
+.metric span {
+    font-weight: bold;
+}
