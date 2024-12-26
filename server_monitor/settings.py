@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-q7w1xx5qk$j#my*2vb^w&c31e*n@%09s+zd*@ee%u*139g=d)o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kami-server-monitor.herokuapp.com']
+ALLOWED_HOSTS = ['kami-server-monitor.herokuapp.com',  '127.0.0.1']
 
 
 # Application definition
